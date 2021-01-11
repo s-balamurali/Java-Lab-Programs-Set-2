@@ -1,0 +1,36 @@
+// Java Lab Program 1 S Balamurali S3 C 52 
+import java.util.Scanner;
+
+public class Area {
+	
+	Area(double length,double breadth){
+		
+		double area=(length*breadth);
+		System.out.println("Area of Rectange Is "+(area)+"sq.units");
+	}
+	
+	Area(double radius){
+		
+		double pi = 3.1415;
+		double area =(pi*Math.pow(radius, 2));
+		System.out.println("Area of Circle is "+(area)+"sq.units");
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double radius,length,breadth;
+
+		System.out.println("Enter  length and beadth of rectangle :");
+		length = sc.nextDouble();
+		breadth=sc.nextDouble();
+		Area rectangle = new Area(length,breadth);
+                 
+                System.out.println("Enter radius of circle :");
+		radius =sc.nextDouble();
+	        Area circle = new Area(radius);
+
+	}
+	
+
+}

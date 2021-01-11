@@ -1,0 +1,19 @@
+//Java Lab Program 3 S Balamurali S3C 52
+public class Triangle
+    {
+	 Triangle() 
+	   {
+		double perimeter;
+		double area;
+		int a=3,b=4,c=5;
+		perimeter=a+b+c;
+		double d = perimeter/2;
+		//Using Heron's Formula 
+		area=Math.sqrt(d*(d-a)*(d-b)*(d-c));
+		System.out.println("Perimeter Of Triangle with sides 3,4,5 = "+perimeter);
+		System.out.println("Area Of Triangle with sides 3,4,5 = "+area);
+		}
+	public static void main(String[] args) {
+		 new Triangle();
+	}
+}

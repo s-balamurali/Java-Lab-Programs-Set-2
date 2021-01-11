@@ -1,0 +1,27 @@
+//Java LabProgram 5 S Balamurali S3C 52
+class A{
+	
+	void displayA() {
+		System.out.println("This is Parent class");
+	}
+}
+	
+class B extends A{
+	void displayB() {
+			System.out.println("This is Child class");
+	} 
+}
+	
+public class Inheritance {
+	public static void main(String[] args) {
+		
+		//calling method of parent class by object of parent class
+		A obj1 = new A();
+		obj1.displayA();
+		//calling method of child class by object of child class
+		B obj2 = new B();
+		obj2.displayB();
+		//calling method of parent class by object of child class
+		obj2.displayA();
+	}
+}
